@@ -29,7 +29,7 @@ const CreatePage = () => {
       navigate("/")
 
     } catch (error) {
-      console.log("Error creating note", error)
+      console.log("Error creating note")
       if (error.response.status === 429) {
         toast.error("Slow down! notes are being created too fast", {
           duration: 4000,

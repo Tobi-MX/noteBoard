@@ -55,7 +55,7 @@ const NoteDetailPage = () => {
       navigate("/")
 
     } catch (error) {
-      console.log("Error updating note", error)
+      console.log("Error updating note")
       if (error.status === 429) {
         toast.error("Slow down! note is being updated too fast", {
           duration: 4000,
